@@ -17,7 +17,7 @@ class _ImageInputState extends State<ImageInput> {
     print("camera!");
     final picker = ImagePicker();
     final imageFile = await picker.getImage(
-      source: ImageSource.camera,
+      source: ImageSource.gallery,
       maxWidth: 600,
     );
     if (imageFile == null) return;
